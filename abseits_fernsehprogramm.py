@@ -47,8 +47,8 @@ try:
                     team1 = selTr.xpath('//td//text()')[2].get().split('–')[0].strip().translate(translationTable)
                     team2 = selTr.xpath('//td//text()')[2].get().split('–')[1].split('(')[0].strip().translate(translationTable)
                 except:
-                    team1 = "No info"
-                    team2 = "No info"
+                    team1 = "No info on site"
+                    team2 = "No info on site"
                 leagues = selTr.xpath('//td//text()')[2].get().split('(')[1].split(')')[0].strip().translate(translationTable)
                 channelsCount = channel.count("/")
                

@@ -4,7 +4,13 @@ import datetime
 from parsel import Selector
 import mysql.connector
 
-connection = mysql.connector.connect(host='5.132.159.203', database='Test_Alex', user='alex', password='NastiViennaMinsk2018_')
+
+host='input hostname'
+database='Test_Alex'
+user='input username'
+password='input password'
+
+connection = mysql.connector.connect(host=host, database=database, user=user, password=password)
 cursor = connection.cursor(prepared=True)
 try:
 
